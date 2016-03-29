@@ -17,7 +17,7 @@
         <input ng-model="city.name" type="text" placeholder="Enter city" />
         <input type="submit" value="Search" />
       </form>
-      <p ng-repeat="one in data">{{one.main.temp | number:0}} &deg;F</p>
+      <p ng-repeat="one in data">The current temperature in {{one.name}} is {{one.main.temp | number:0}} &deg;F</p>
     </div>
   </body>
 </html>
